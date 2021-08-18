@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(0, 0, 0, 0.698);
+  /* background-color: rgba(0, 0, 0, 0.698); */
 }
 
 #content-box {
@@ -11,13 +11,13 @@ body {
 }
 
 #top-row {
-  background-color: aquamarine;
+  /* background-color: rgb(70, 70, 70); */
   margin-top: 50px;
   padding-top: 10px;
 }
 
 #logo-box {
-  background-color: rgba(0, 0, 255, 0.356);
+  background-color: rgba(121, 121, 121, 0.705);
   padding-left: 50px;
   padding-right: 50px;
   display: flex;
@@ -26,7 +26,7 @@ body {
 }
 
 #title {
-  background-color: rgba(165, 42, 42, 0.349);
+  background-color: rgba(121, 121, 121, 0.705);
   text-align: center;
   font-size: 300%;
   font-weight: 600;
@@ -36,7 +36,7 @@ body {
 }
 
 #nav-box {
-  background-color: rgba(0, 100, 0, 0.418);
+  background-color: rgba(121, 121, 121, 0.705);
 }
 
 #cujo-head {
@@ -51,7 +51,7 @@ body {
 }
 
 #main-content-box {
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   margin-top: 50px;
   height: 200px;
 }
@@ -92,4 +92,55 @@ body {
 
 #carousel-label-div2 {
   background-color: rgb(105, 105, 105);
+}
+
+#mute {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+#sound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.overlayImage {
+  position: absolute;
+  /* mix-blend-mode: multiply; */
+}
+
+@media only screen and (max-width: 992px) {
+  .carousel,
+  .d-block {
+    height: 533px;
+    width: 1083px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel,
+  .d-block {
+    height: 413px;
+    width: 840px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .carousel,
+  .d-block {
+    height: 310px;
+    width: 630px;
+  }
 }

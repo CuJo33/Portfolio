@@ -17,6 +17,8 @@
     <!--Head-->
     <title>Joe Curtis' Online Portfolio</title>
     <link rel="shortcut icon" type="image/x-icon" href="cujo_head.jpg" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container-fluid justify-content-center">
@@ -38,7 +40,23 @@
           <div class="col-8 justify-content-center" id="title">
             Joe Curtis' Online Portfolio
           </div>
-          <div class="col-2" id="nav-box">
+          <div class="col-2 justify-content-center imageWrapper" id="nav-box">
+            <div
+              class="music-logo justify-content-center overlayImage"
+              id="mute"
+            >
+              <img src="mute.png" alt="volume logo muted" />
+            </div>
+            <div
+              class="music-logo justify-content-center overlayImage"
+              id="sound"
+            >
+              <img
+                src="sound.png"
+                alt="volume logo with volume up"
+                display="none"
+              />
+            </div>
             <!-- Default dropleft button
             <div class="btn-group dropdown-menu-left dropleft">
               <button
