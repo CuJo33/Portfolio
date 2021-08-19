@@ -1,5 +1,11 @@
-body {
-  /* background-color: rgba(0, 0, 0, 0.698); */
+#background-img {
+  background-image: url("background-img1.jpg");
+  opacity: 60%;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  z-index: -10;
 }
 
 #content-box {
@@ -11,13 +17,12 @@ body {
 }
 
 #top-row {
-  /* background-color: rgb(70, 70, 70); */
   margin-top: 50px;
   padding-top: 10px;
 }
 
 #logo-box {
-  background-color: rgba(121, 121, 121, 0.705);
+  background-color: rgba(255, 255, 255, 0.883);
   padding-left: 50px;
   padding-right: 50px;
   display: flex;
@@ -26,17 +31,15 @@ body {
 }
 
 #title {
-  background-color: rgba(121, 121, 121, 0.705);
+  background-color: rgba(255, 255, 255, 0.883);
   text-align: center;
-  font-size: 300%;
-  font-weight: 600;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 #nav-box {
-  background-color: rgba(121, 121, 121, 0.705);
+  background-color: rgba(255, 255, 255, 0.883);
 }
 
 #cujo-head {
@@ -65,18 +68,15 @@ body {
   overflow: hidden;
 }
 
-#climb_quiz {
-  aspect-ratio: 1920/1080;
-}
-
 .d-block {
-  height: 645px;
-  width: 1311px;
+  /* height: 645px; */
+  width: 68vw;
 }
 
 .carousel {
-  height: 645px;
-  width: 1311px;
+  /* height: 645px; */
+
+  width: 68vw;
 }
 
 .carousel-caption {
@@ -85,62 +85,155 @@ body {
 
 .carousel-label-div {
   padding: 20px;
-  width: 40%;
+  width: 27.2vw;
   margin: auto;
   background-color: silver;
+}
+
+.carousel-inner {
+  height: 650px;
 }
 
 #carousel-label-div2 {
   background-color: rgb(105, 105, 105);
 }
 
-#mute {
-  display: flex;
+#play-button {
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  height: 50px;
-  width: 50px;
-}
-
-#sound {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height: 50px;
-  width: 50px;
-}
-
-.imageWrapper {
-  position: relative;
-}
-
-.overlayImage {
+  text-align: center; */
+  height: 50%;
   position: absolute;
-  /* mix-blend-mode: multiply; */
+  bottom: 0;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  mix-blend-mode: multiply;
 }
 
+.button {
+  border-radius: 50%;
+}
+
+#pause-button {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; */
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  mix-blend-mode: multiply;
+}
+
+#sound-logo {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: black;
+}
+/* custom */
+
+#carouselExampleCaptions {
+  height: 68vh;
+}
+
+#climb_quiz {
+  /* aspect-ratio: 1920/1080; */
+  height: 68vh;
+}
+
+/* 1311 full width. 75% */
 @media only screen and (max-width: 992px) {
   .carousel,
   .d-block {
-    height: 533px;
-    width: 1083px;
+    width: 70vw;
+  }
+  h1 {
+    font-size: 2rem;
+    color: white;
+  }
+  h5 {
+    font-size: 1.25rem;
+    color: white;
+  }
+  p {
+    font-size: 0.8rem;
+    color: white;
+  }
+  #carouselExampleCaptions {
+    height: 52vh;
+  }
+  #climb_quiz,
+  #oop,
+  #climb_web,
+  .d-none {
+    /* aspect-ratio: 1920/1080; */
+    height: 30vh;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .carousel,
-  .d-block {
-    height: 413px;
-    width: 840px;
+  h1 {
+    font-size: 1.5rem;
+    color: white;
+  }
+  h5 {
+    font-size: 0.8rem;
+    color: white;
+  }
+  p {
+    font-size: 0.5rem;
+    color: white;
+  }
+  #carouselExampleCaptions {
+    height: 30vh;
+  }
+  #climb_quiz,
+  #oop,
+  #climb_web,
+  .d-none {
+    /* aspect-ratio: 1920/1080; */
+    height: 22vh;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .carousel,
-  .d-block {
-    height: 310px;
-    width: 630px;
+  h1 {
+    font-size: 1.5rem;
+    color: white;
+  }
+  h5 {
+    font-size: 0.25rem;
+    color: white;
+  }
+  p {
+    font-size: 0.15rem;
+    color: white;
+  }
+  #carouselExampleCaptions {
+    height: 30vh;
+  }
+  #climb_quiz,
+  #oop,
+  #climb_web,
+  .d-none {
+    /* aspect-ratio: 1920/1080; */
+    height: 22vh;
   }
 }

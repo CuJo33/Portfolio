@@ -1,4 +1,15 @@
-document.getElementById("music").style.display = "none";
+document.getElementById("video").style.display = "none";
+document.getElementById("play-button").style.display = "none";
+
+function sound() {
+  document.getElementById("pause-button").style.display = "inherit";
+  document.getElementById("play-button").style.display = "none";
+}
+
+function mute() {
+  document.getElementById("pause-button").style.display = "none";
+  document.getElementById("play-button").style.display = "inherit";
+}
 
 function load1() {
   window.open("https://cujo33.github.io/OOPGame/");
