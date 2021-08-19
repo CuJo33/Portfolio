@@ -1,11 +1,30 @@
+body {
+  overflow-x: hidden;
+}
+
 #background-img {
   background-image: url("background-img1.jpg");
-  opacity: 60%;
-  height: 100vh;
+  opacity: 75%;
+  height: 190vh;
   width: 100vw;
   position: absolute;
   top: 0px;
   z-index: -10;
+}
+
+.about,
+.goals,
+.work {
+  text-align: center;
+}
+
+.p-work {
+  font-size: 0.8rem;
+}
+
+#main-col2 {
+  padding-left: 7.5px;
+  padding-bottom: 7.5px;
 }
 
 #content-box {
@@ -19,6 +38,10 @@
 #top-row {
   margin-top: 50px;
   padding-top: 10px;
+}
+
+#main-row2 {
+  background-color: silver;
 }
 
 #logo-box {
@@ -46,7 +69,7 @@
   display: block;
   border-radius: 200px;
   box-sizing: border-box;
-  border: 5px solid #012ec0a1;
+  border: 5px solid #c01701a1;
   height: 8vw;
   width: 8vw;
   min-width: 40px;
@@ -117,6 +140,7 @@
 
 .button {
   border-radius: 50%;
+  border: 5px solid #c01701a1;
 }
 
 #pause-button {
@@ -137,6 +161,12 @@
 }
 
 #sound-logo {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
+
+#mute-logo {
   height: 50%;
   width: 50%;
   margin: auto;
