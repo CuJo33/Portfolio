@@ -1,0 +1,269 @@
+body {
+  overflow-x: hidden;
+}
+
+#background-img {
+  background-image: url("background-img1.jpg");
+  opacity: 75%;
+  height: 190vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  z-index: -10;
+}
+
+.about,
+.goals,
+.work {
+  text-align: center;
+}
+
+.p-work {
+  font-size: 0.8rem;
+}
+
+#main-col2 {
+  padding-left: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+#content-box {
+  width: 80%;
+}
+
+#logo-box {
+  overflow: visible;
+}
+
+#top-row {
+  margin-top: 50px;
+  padding-top: 10px;
+}
+
+#main-row2 {
+  background-color: silver;
+}
+
+#logo-box {
+  background-color: rgba(255, 255, 255, 0.883);
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#title {
+  background-color: rgba(255, 255, 255, 0.883);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#nav-box {
+  background-color: rgba(255, 255, 255, 0.883);
+}
+
+#cujo-head {
+  display: block;
+  border-radius: 200px;
+  box-sizing: border-box;
+  border: 5px solid #c01701a1;
+  height: 8vw;
+  width: 8vw;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+#main-content-box {
+  /* background-color: cadetblue; */
+  margin-top: 50px;
+  height: 200px;
+}
+
+.second-box {
+  width: 70%;
+}
+
+.carousel-item {
+  aspect-ratio: 1920/1080;
+  overflow: hidden;
+}
+
+.d-block {
+  /* height: 645px; */
+  width: 68vw;
+}
+
+.carousel {
+  /* height: 645px; */
+
+  width: 68vw;
+}
+
+.carousel-caption {
+  bottom: 110px;
+}
+
+.carousel-label-div {
+  padding: 20px;
+  width: 27.2vw;
+  margin: auto;
+  background-color: silver;
+}
+
+.carousel-inner {
+  height: 650px;
+}
+
+#carousel-label-div2 {
+  background-color: rgb(105, 105, 105);
+}
+
+#play-button {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; */
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  mix-blend-mode: multiply;
+}
+
+.button {
+  border-radius: 50%;
+  border: 5px solid #c01701a1;
+}
+
+#pause-button {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; */
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  mix-blend-mode: multiply;
+}
+
+#sound-logo {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
+
+#mute-logo {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: black;
+}
+/* custom */
+
+#carouselExampleCaptions {
+  height: 68vh;
+}
+
+#climb_quiz {
+  /* aspect-ratio: 1920/1080; */
+  height: 68vh;
+}
+
+/* 1311 full width. 75% */
+@media only screen and (max-width: 992px) {
+  .carousel,
+  .d-block {
+    width: 70vw;
+  }
+  h1 {
+    font-size: 2rem;
+    color: white;
+  }
+  h5 {
+    font-size: 1.25rem;
+    color: white;
+  }
+  p {
+    font-size: 0.8rem;
+    color: white;
+  }
+  #carouselExampleCaptions {
+    height: 52vh;
+  }
+  #climb_quiz,
+  #oop,
+  #climb_web,
+  .d-none {
+    /* aspect-ratio: 1920/1080; */
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+    color: white;
+  }
+  h5 {
+    font-size: 0.8rem;
+    color: white;
+  }
+  p {
+    font-size: 0.5rem;
+    color: white;
+  }
+  #carouselExampleCaptions {
+    height: 30vh;
+  }
+  #climb_quiz,
+  #oop,
+  #climb_web,
+  .d-none {
+    /* aspect-ratio: 1920/1080; */
+    height: 22vh;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+    color: white;
+  }
+  h5 {
+    font-size: 0.25rem;
+    color: white;
+  }
+  p {
+    font-size: 0.15rem;
+    color: white;
+  }
+  #carouselExampleCaptions {
+    height: 30vh;
+  }
+  #climb_quiz,
+  #oop,
+  #climb_web,
+  .d-none {
+    /* aspect-ratio: 1920/1080; */
+    height: 22vh;
+  }
+}
